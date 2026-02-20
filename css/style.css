@@ -352,7 +352,7 @@ p {
 .about .box {
   position: relative;
   width: 150px;
-  height: 100px;
+  height: 150px;
   background: #040913;
   border-radius: 50%;
   text-align: center;
@@ -795,7 +795,7 @@ circle p {
 
 .Testimonials .item .item_img {
   width: 80px;
-  height: 80px;
+  height: 80px
 }
 
 .Testimonials .item img {
@@ -990,7 +990,7 @@ footer {
 }
 
 footer .content {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 footer img {
@@ -1214,4 +1214,49 @@ footer .legal {
   }
 
   /*---------social_media--------*/
+}
+
+/* practicals */
+.practicals{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: center;
+}
+
+.madam{
+  display: flex;
+  flex-direction:row ;
+  column-gap: 10px;
+  align-items: left;
+  justify-content: left;
+}
+
+.madam img{
+  width: 10em;
+  border-radius: 1em;
+}
+
+.portfolio{
+  height: 1250px;
+  background-color: #040913;
+  padding: 2em;
+}
+
+.practicals button{
+  background-color: #20C863;
+  height: 3em;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.practicals button a{
+  color: white;
+  font-weight: 600;
+}
+
+.blog{
+  background-color: #040913;
+  padding: 2em;
 }
