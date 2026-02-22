@@ -1228,7 +1228,7 @@ footer .legal {
 .madam{
   display: flex;
   flex-direction:row ;
-  column-gap: 10px;
+  column-gap: 15px;
   align-items: left;
   justify-content: left;
 }
@@ -1238,8 +1238,11 @@ footer .legal {
   border-radius: 1em;
 }
 
+.madam h3{
+  color: #20C863;
+}
 .portfolio{
-  height: 1250px;
+  height: 1550px;
   background-color: #040913;
   padding: 2em;
 }
