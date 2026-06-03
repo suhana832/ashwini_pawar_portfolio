@@ -64,7 +64,8 @@ header {
 }
 
 .nav-item {
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  padding: 1em;
 }
 
 .nav-link {
@@ -241,7 +242,7 @@ p {
 }
 
 .mtop {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .home {
@@ -574,11 +575,13 @@ circle p {
 /*---------skills--------*/
 /*---------portfolio--------*/
 .portfolio {
-  height: 90vh;
+  height: fit-content;
 }
 
 .portfolio h2 {
   margin: 0;
+  font-size: x-large;
+  text-align: justify;
 }
 
 .filter_container {
@@ -1242,7 +1245,7 @@ footer .legal {
   color: #20C863;
 }
 .portfolio{
-  height: 1550px;
+  /* height: fix ; */
   background-color: #040913;
   padding: 2em;
 }
@@ -1264,3 +1267,65 @@ footer .legal {
   padding: 2em;
 }
 
+/* TOGGLE BAR HEADER SUHANA'S NEW CODE */
+
+
+/* Dropdown Hidden State */
+.dropdown-menu {
+  display: none; /* Keeps menu hidden by default */
+  position: absolute;
+  /* top: 10px; /* Positions menu directly under the parent link */
+  /* left: 0;  */
+  background-color: #20c863b6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding:1em;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 400px; /* Limits height and adds scroll if content exceeds */
+  border-radius: 5px;
+  z-index: 1000; /* Ensures the menu sits on top of other content */
+}
+
+/* Dropdown Menu Item Styling */
+.dropdown-menu li a {
+  color: #333;
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+  color: #000;
+}
+
+/* The Magic Toggle Behavior */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Reveals menu when hovering over parent */
+}
+
+/* Optional Arrow Rotation */
+.dropdown:hover .arrow {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+/* Custom Scrollbar Styles */
+.dropdown-menu::-webkit-scrollbar {
+  width: 5px; /* Makes scrollbar narrow and modern */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 4px;
+}
+ 
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
+}
